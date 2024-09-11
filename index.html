@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="./anation.css">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="./bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
     <title>董文賓個人履歷</title>
 
 </head>
@@ -18,7 +18,7 @@
           <a class="nav-link active text-white" href="#aboutme">關於我</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="#">Link</a>
+          <a class="nav-link text-white" href="#work">個人作品</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-white" href="#">Link</a>
@@ -29,53 +29,54 @@
     </ul>
 
     <div class="container header" >
-        <div class="row">
-            <div class="col-12 text-center position-absolute top-50 start-50 translate-middle" >
-                <img class="img-fluid circle" src="https://picsum.photos/id/684/600/400" data-aos="zoom-in" data-aos-duration="1000">
-                <p class="mt-4 text-white fw-semibold fs-4">董文賓</p>
+        <div class="row ">
+            <div class="col-12 text-center" >
+                <div class="circle position-absolute top-50 start-50 translate-middle">
+                    <img class="img-fluid mt-4" src="./img/Head_sticker.png" data-aos="zoom-in" data-aos-duration="1000">
+                </div>
+                <div class="translate-middle" style="position: absolute; top: 70%; left: 50%; ">
+                    <p class="text-white fw-semibold fs-4">董文賓</p>
+                </div>
             </div>
         </div>
     </div>
-    <div class="position-absolute bottom-0 start-50 translate-middle-x" >
-        <box-icon name='down-arrow-circle' animation='fade-down' color='#fff' style="height: 35px; width: 35px;" ></box-icon>
-    </div>
-
+    <!-- 關於我 -->
     <section class="section aboutme"  id="aboutme">
         <div class="container mt-5">
             <div class="row">
-                <div class="col-12 col-sm-6">
+                <div class="col-12">
                     <div class="card border-warning-subtle mt-5" style="background-color: #212121;" data-aos="fade-right"  data-aos-duration="1500">
                         <div class="card-title border-bottom border-warning-subtle">
-                            <h3 class="text-center text-white  mt-3 mb-3 fw-bold"><box-icon name='user-rectangle' type='solid' color='#ffffff'></box-icon>基本資料</h3>
+                            <h3 class="text-center text-white  mt-3 mb-3 fw-bold"><i class="bi bi-file-person-fill"></i>基本資料</h3>
                         </div>
                         <div class="card-body">
-                            <p class="text-white d-flex"><box-icon name='right-arrow' type='solid' color='#ffc107' ></box-icon>董文賓</p>
-                            <p class="text-white d-flex"><box-icon name='right-arrow' type='solid' color='#ffc107' ></box-icon>2002/04/27</p>
-                            <p class="text-white d-flex"><box-icon name='right-arrow' type='solid' color='#ffc107' ></box-icon>花蓮縣花蓮市</p>
-                            <p class="text-white d-flex "><box-icon name='right-arrow' type='solid' color='#ffc107' ></box-icon>2024年06月　畢業於台南應用科技大學　資訊管理系</p>
+                            <div class="text-white"><i class="bi bi-person-fill me-1 fs-4 " style=" color:#ffc107"></i><span style="font-size: 18px;">姓名：董文賓</span></div>
+                            <div class="text-white"><i class="bi bi-cake2-fill me-1 fs-4" style=" color:#ffc107"></i><span style="font-size: 18px;">生日：2002/04/27</span></div>
+                            <div class="text-white"><i class="bi bi-house-door-fill me-1 fs-4"  style=" color:#ffc107"></i><span style="font-size: 18px;">現居：高雄市</span></div>
+                            <div class="text-white "><svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="#ffc107" d="M21 17v-6.9L12 15L1 9l11-6l11 6v8zm-9 4l-7-3.8v-5l7 3.8l7-3.8v5z"/></svg><span style="font-size: 18px;">畢業：台南應用科技大學　資訊管理系</span></div>
                         
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6">
+                <div class="col-12">
                     <div class="card border-warning-subtle mt-5" style="background-color: #212121;" data-aos="fade-left"  data-aos-duration="1500">
                         <div class="card-title border-bottom border-warning-subtle">
-                            <h3 class="text-center text-white  mt-3 mb-3 fw-bold"><box-icon name='id-card' type='solid' color='#ffffff' ></box-icon>專業證照</h3>
+                            <h3 class="text-center text-white  mt-3 mb-3 fw-bold"><i class="bi bi-person-vcard-fill"></i>專業證照</h3>
                         </div>
                         <div class="card-body">
-                            <p class="text-white d-flex"><box-icon name='right-arrow' type='solid' color='#ffc107' ></box-icon>乙級電腦軟體應用技術士</p>
-                            <p class="text-white d-flex"><box-icon name='right-arrow' type='solid' color='#ffc107' ></box-icon>丙級電腦軟體應用技術士</p>
-                            <p class="text-white d-flex"><box-icon name='right-arrow' type='solid' color='#ffc107' ></box-icon>MTA：Database Administration Fundamentals</p>
-                            <p class="text-white d-flex"><box-icon name='right-arrow' type='solid' color='#ffc107' ></box-icon>GLAD：Certification Programs using Python Programming - Essentials level</p>
-                            <p class="text-white d-flex"><box-icon name='right-arrow' type='solid' color='#ffc107' ></box-icon>GLAD：Artifical Intelligence Technology and Applications - Specialist level</p>
+                            <p class="text-white d-flex"><i class="bi bi-1-circle-fill me-1 fs-5" style=" color:#ffc107"></i><span style="font-size: 18px;">乙級電腦軟體應用技術士</span></p>
+                            <p class="text-white d-flex"><i class="bi bi-2-circle-fill me-1 fs-5" style=" color:#ffc107"></i><span style="font-size: 18px;">丙級電腦軟體應用技術士</span></p>
+                            <p class="text-white d-flex"><i class="bi bi-3-circle-fill me-1 fs-5" style=" color:#ffc107"></i><span style="font-size: 18px;">MTA：Database Administration Fundamentals</span></p>
+                            <p class="text-white d-flex"><i class="bi bi-4-circle-fill me-1 fs-5" style=" color:#ffc107"></i><span style="font-size: 18px;">GLAD：Certification Programs using Python Programming - Essentials level</span></p>
+                            <p class="text-white d-flex"><i class="bi bi-5-circle-fill me-1 fs-5" style=" color:#ffc107"></i><span style="font-size: 18px;">GLAD：Artifical Intelligence Technology and Applications - Specialist level</span></p>
 
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 mt-3">
-                    <div class="card border-warning-subtle" style="background-color: #212121;"  data-aos="fade-right"  data-aos-duration="2000">
+                <div class="col-12">
+                    <div class="card border-warning-subtle mt-5" style="background-color: #212121;"  data-aos="fade-right"  data-aos-duration="2000">
                         <div class="card-title border-bottom border-warning-subtle">
-                            <h3 class="text-center text-white mt-3 mb-3 fw-bold"><box-icon type='solid' name='cog' color='#ffffff'></box-icon>專業能力</h3>
+                            <h3 class="text-center text-white mt-3 mb-3 fw-bold"><i class="bi bi-tools"></i>專業能力</h3>
                         </div>
                         <div class="card-body">
                             <div class="row">
@@ -124,7 +125,54 @@
         </div>
     </section>
 
+    <!-- 個人作品 -->
+    <section class="worksection work" id="work">
+        <div class="container mt-5">
+            <div class="row">
+                <p class="text-white text-center mt-5 fs-1 fw-semibold">個人作品</p>
+                <div class="col-12 col-sm-4">
+                    <div class="topicsmenu card border-warning-subtle mt-5" style="background-color: #353535;">
+                        <button type="button" class="btn card-body btn-outline-dark" data-bs-toggle="modal" data-bs-target="#work_topics" href="./topics.html">
+                            <img class="img-fluid" src="./img/logo.png">
+                            <div class="text-white fs-5">
+                                畢業專題-多元化販賣機
+                            </div>
+                        </button>
+                        <div class="modal fade" id="work_topics" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-xl ">
+                              <div class="modal-content" style="background-color: #212121;">
+                                <div class="modal-header border-warning">
+                                  <h1 class="modal-title fs-5 text-white">畢業專題-多元化販賣機</h1>
+                                  <button type="button" class="border-0 btn text-white fw-semibold" data-bs-dismiss="modal" aria-label="Close">X</button>
+                                </div>
+                                <div class="modal-body topicsview">
+                                  
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <div class="card border-warning-subtle mt-5" style="background-color: #353535;">
+                        <div class="card-body">
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <div class="card border-warning-subtle mt-5" style="background-color: #353535;">
+                        <div class="card-body">
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="./js/ajax.js"></script>
 <script>
     AOS.init();
 </script>
