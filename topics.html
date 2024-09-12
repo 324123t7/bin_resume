@@ -11,17 +11,107 @@
     <title>董文賓個人履歷</title>
 
 </head>
-<body style="background-color: #212121">
+<body style="background-color: #353535">
   
   <div class="container">
     <div class="row">
-      <div class="col-6">
-        <img class="img-fluid" src="./img/logo.png">
+      <!-- 輪播圖 -->
+      <div class="col-12">
+        <div id="ViewWeb" class="carousel slide" data-bs-ride="true">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/PC.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/phone.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/seller_phone.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#ViewWeb" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#ViewWeb" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
-      <div class="col-6">
-        <p class="text-white text-center">
-          專題介紹
+      <!-- 作品概述 -->
+      <div class="col-12 mt-3">
+        <p class="text-warning fw-semibold fs-5 mt-3">
+          <i class="bi bi-file-earmark-text-fill"></i>
+          作品概述
         </p>
+        <span class="text-white">
+          &emsp;&emsp;本研究的動機源自於台灣現行各行業目前主要仍以現金交易為主，然而，現代化各種支付技術的發展促使行動支付及信用卡成為主流，尤其在疫情影響下，減少人與物品接觸成為重要議題。本研究專注於販賣機支付領域，針對現行以投幣式為主的機台，結合行動支付技術，旨在降低不必要的接觸風險。透過資料庫紀錄數據，使我們可以即時查看庫存和銷售數據，提升交易效率並強化管理，同時促進電子化及無接觸的交易模式。
+        </span>
+      </div>
+      <!-- 開發工具 -->
+      <div class="col-12 col-sm-6 mt-3">
+        <p class="text-warning fw-semibold fs-5 mt-3">
+          <i class="bi bi-hammer"></i>          
+          開發工具
+        </p>
+        <span class="text-white">
+          &emsp;&emsp;前端：HTML、CSS、Javascript、JQuery、Bootstrap<br>
+          &emsp;&emsp;後端：PHP<br>
+          &emsp;&emsp;資料庫：MySQL<br>
+          &emsp;&emsp;作業系統：Windows、Raspberry Pi<br>
+          &emsp;&emsp;硬體設備：Raspberry4、Ipad、步進馬達及驅動版
+
+        </span>
+      </div>
+      <!-- 負責項目及主要功能 -->
+      <div class="col-12 col-sm-6 mt-3">
+        <p class="text-warning fw-semibold fs-5 mt-3">
+          <i class="bi bi-hammer"></i>          
+          負責項目
+        </p>
+        <span class="text-white">
+          &emsp;&emsp;網站架構規劃、網站頁面切版、販賣機實體機台介接
+        </span>
+        <p class="text-warning fw-semibold fs-5 mt-3">
+          <i class="bi bi-lightbulb-fill"></i>          
+          主要功能
+        </p>
+        <span class="text-white">
+          &emsp;&emsp;販賣機會員系統、線上瀏覽及購買商品、商家管理系統
+        </span>
+      </div>
+      <!-- 運行影片及相關圖片 -->
+      <div class="col-12 mt-3">
+        <p class="text-warning fw-semibold fs-5 mt-3">
+          <i class="bi bi-gear-fill"></i>
+          運行影片及相關圖片</p>
+        <div class="ratio ratio-21x9">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Pd-w5lCqjWA?si=uVxmWp7O9hZiH5FJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        
+        </div>
+      </div>
+      <div class="col-12">
+        <div id="viewimg" class="carousel slide mt-4" data-bs-ride="true">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/entity1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/phone.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/seller_phone.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#viewimg" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#viewimg" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
     </div>
   </div>
