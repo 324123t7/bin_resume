@@ -6,3 +6,11 @@ $(function () {
     e.preventDefault();
   }).first().click();
 });
+
+function opentopic(){
+  window.open('http://iotsvm.ddns.net/public/login','_blank');
+}
+
+function openvideo(){
+  window.open('https://www.youtube.com/watch?v=Pd-w5lCqjWA','_blank');
+}

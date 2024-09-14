@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
-    <title>董文賓個人履歷</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/jquery-3.7.1.min.js"></script>
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
+  <title>董文賓個人履歷</title>
 
 </head>
 <body style="background-color: #353535">
@@ -115,17 +116,22 @@
           </button>
         </div>
       </div>
-      <div class="col-12 mt-4">
-        <button type="button" class="btn btn-outline-info mx-auto d-block" onclick="location.href='http://iotsvm.servehttp.com/public/login'" target="_blank">網站連結</button>
+      <div class="col-12 mt-3">
+        <p class="text-warning fw-semibold fs-5 ">
+          <i class="bi bi-globe-americas"></i>
+          相關連結</p>
+          <div class="row">
+            <div class="col">
+              <button type="button" class="btn btn-outline-info mx-auto d-block w-50" onclick="opentopic()">網站連結</button>
+            </div>
+            <div class="col">
+              <button type="button" class="btn btn-outline-info mx-auto d-block w-50" onclick="openvideo()">影片連結</button>
+            </div>
+          </div>
       </div>
     </div>
   </div>
 
-
-
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
+<script src="./js/ajax.js"></script>
 </body>
 </html>
