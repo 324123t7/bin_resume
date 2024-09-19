@@ -16,13 +16,13 @@
 <body style="background-color: #212121">
     <ul class="nav sticky-top justify-content-center border-1 border-bottom border-warning mt-3 pb-3" style="z-index: 999;background-color: #212121;">
         <li class="nav-item">
-          <a class="nav-link active text-white" href="#aboutme">關於我</a>
+          <a class="nav-link active text-white" href="./index.html#aboutme">關於我</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="#work">個人作品</a>
+          <a class="nav-link text-white" href="./index.html#work">個人作品</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="#">與我聯絡</a>
+          <a class="nav-link text-white" href="./contact.html">與我聯絡</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-white" href="#">Disabled</a>
@@ -38,8 +38,8 @@
                         <div class="input-group mb-3">
                             <input name="name" type="text" class="form-control w-50" id="name" value="">
                             <select class="form-select" id="call">
-                              <option value="1">先生</option>
-                              <option value="2">小姐</option>
+                              <option value="先生">先生</option>
+                              <option value="小姐">小姐</option>
                             </select>                           
                         </div>
                         <div class="mb-3">
@@ -62,15 +62,18 @@
             </div>
         </div>
     </div>
+    <div class="ok modal d-none " tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered ">
+          <div class="modal-content border border-warning-subtle" style="background-color: #212121;">
+            <div class="modal-body" >
+              <p class="text-center mt-3 text-white">謝謝您的留言我已收到!我將盡快回覆於您所留存的電子郵件</p>
+              <button id="close" type="button" class="btn btn-success mx-auto d-flex mt-4" data-bs-dismiss="modal">返回</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="viewback modal-backdrop fade d-none"></div>
 
 <script src="./js/ajax.js"></script>
 </body>
 </html>
-<!-- https://docs.google.com/forms/u/0/d/e/1FAIpQLSdexI7qBomUCZgGRQWcyP813sAaZso6JV0iuzRvhZSBbwNEFA/formResponse -->
- <!-- 
-1.entry.1107420346
-2.entry.1675490282
-3.entry.243514853
-4.entry.766702982
-5.entry.988081046
- -->
