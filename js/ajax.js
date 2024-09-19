@@ -16,6 +16,14 @@ $(function () {
   }).first().click();
 });
 
+$(function () {
+  $(".itemsmenu>button").click(function (e) {
+    $(".itemsmenu>button.itemsselected").removeClass();
+    $(".itemsmenu>button").addClass('btn card-body btn-outline-dark');
+    $(".itemsview").load($(this).addClass("itemsselected").attr("href"));
+    e.preventDefault();
+  }).first().click();
+});
 
 $("#submail").click(function(){
   const name=$('#name').val();
@@ -23,30 +31,46 @@ $("#submail").click(function(){
   const email=$('#email').val();
   const subject=$('#subject').val();
   const message=$('#message').val();
-  var data = {
-    'entry.1107420346': name,
-    'entry.1675490282': call,
-    'entry.243514853': email,
-    'entry.766702982': subject,
-    'entry.988081046':message
-  };
-  $.ajax({
-    type: 'POST',
-    url: 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSdexI7qBomUCZgGRQWcyP813sAaZso6JV0iuzRvhZSBbwNEFA/formResponse',
-    data: data,
-    contentType: 'application/json',
-    dataType: 'jsonp',
-    complete: function() {
-      $('.ok').removeClass('d-none');
-      $('.ok').addClass('d-block');
-      $('.viewback').removeClass('d-none');
-      $('.viewback').addClass('show');
-      $('#close').click(function(){
-        $('.ok').removeClass('d-block');
-        $('.ok').addClass('d-none');
-        $('.viewback').removeClass('d-block');
-        $('.viewback').addClass('d-none');
-      })
-    }
-  });
+  if(name==""||call==""||email==""||subject==""||message==""){
+    $('.thank').text('您還有欄位尚未填寫');
+    $('.ok').removeClass('d-none');
+    $('.ok').addClass('d-block');
+    $('.viewback').removeClass('d-none');
+    $('.viewback').addClass('show');
+    $('#close').click(function(){
+      $('.ok').removeClass('d-block');
+      $('.ok').addClass('d-none');
+      $('.viewback').removeClass('d-block');
+      $('.viewback').addClass('d-none');
+    })
+  }else{
+    var data = {
+      'entry.1107420346': name,
+      'entry.1675490282': call,
+      'entry.243514853': email,
+      'entry.766702982': subject,
+      'entry.988081046':message
+    };
+    $.ajax({
+      type: 'POST',
+      url: 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSdexI7qBomUCZgGRQWcyP813sAaZso6JV0iuzRvhZSBbwNEFA/formResponse',
+      data: data,
+      contentType: 'application/json',
+      dataType: 'jsonp',
+      complete: function() {
+        $('.thank').text('謝謝您的留言我已收到!我將盡快回覆於您所留存的電子郵件');
+        $('.ok').removeClass('d-none');
+        $('.ok').addClass('d-block');
+        $('.viewback').removeClass('d-none');
+        $('.viewback').addClass('show');
+        $('#close').click(function(){
+          $('.ok').removeClass('d-block');
+          $('.ok').addClass('d-none');
+          $('.viewback').removeClass('d-block');
+          $('.viewback').addClass('d-none');
+        })
+      }
+    });
+  }
+
 })
