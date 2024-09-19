@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/smtp.js"></script>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
+    <title>董文賓個人履歷</title>
+
+</head>
+<body style="background-color: #212121">
+    <ul class="nav sticky-top justify-content-center border-1 border-bottom border-warning mt-3 pb-3" style="z-index: 999;background-color: #212121;">
+        <li class="nav-item">
+          <a class="nav-link active text-white" href="#aboutme">關於我</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#work">個人作品</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">與我聯絡</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Disabled</a>
+        </li>
+    </ul>
+    
+    <div class="container mt-5" id="ViewCard">
+        <div class="row">
+            <div class="col-sm-4 col-12 mx-auto position-absolute top-50 start-50 translate-middle z-1">
+                <div class="card border-warning-subtle" style="background-color: #353535;">
+                    <div class="card-body">
+                        <label for="formGroupExampleInput" class="form-label" style=" color:#ffc107">姓名</label>
+                        <div class="input-group mb-3">
+                            <input name="name" type="text" class="form-control w-50" id="name" value="">
+                            <select class="form-select" id="call">
+                              <option value="1">先生</option>
+                              <option value="2">小姐</option>
+                            </select>                           
+                        </div>
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput" class="form-label" style=" color:#ffc107">您的電子郵件</label>
+                            <input name="email" type="text" class="form-control" id="email"  value="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput2" class="form-label" style=" color:#ffc107">主旨</label>
+                            <input name="subject" type="text" class="form-control" id="subject">
+                        </div>
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput2" class="form-label" style=" color:#ffc107">內容</label>
+                            <textarea name="message" id="message" class="form-control" aria-label="With textarea"  rows="10" cols="50"></textarea>
+                        </div>
+                        <div class="col">
+                            <button id="submail" class="btn btn-success rounded w-100" type="submit" name="submail">傳送</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="./js/ajax.js"></script>
+</body>
+</html>
+<!-- https://docs.google.com/forms/u/0/d/e/1FAIpQLSdexI7qBomUCZgGRQWcyP813sAaZso6JV0iuzRvhZSBbwNEFA/formResponse -->
+ <!-- 
+1.entry.1107420346
+2.entry.1675490282
+3.entry.243514853
+4.entry.766702982
+5.entry.988081046
+ -->
