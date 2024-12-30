@@ -27,41 +27,41 @@
     background-color: #212121;
 }
 .aboutme{
-    height: 170vh;
+    height: 180vh;
 }
 .work{
-    height: 170vh;
+    height: 220vh;
 }
 @media (min-width: 576px) { 
     .aboutme{
-        height: 120vh;
+        height: 130vh;
     }
  }
 
  @media (min-width: 768px) { 
     .aboutme{
-        height: 120vh;
+        height: 130vh;
+    }
+    .work{
+        height: 150vh;
+    }
+ }
+
+ @media (min-width: 992px) { 
+    .aboutme{
+        height: 160vh;
     }
     .work{
         height: 140vh;
     }
  }
 
- @media (min-width: 992px) { 
-    .aboutme{
-        height: 150vh;
-    }
-    .work{
-        height: 120vh;
-    }
- }
-
  @media (min-width: 1200px) { 
     .aboutme{
-        height: 130vh;
+        height: 140vh;
     }
     .work{
-        height: 100vh;
+        height: 130vh;
     }
  }
 
