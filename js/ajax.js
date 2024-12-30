@@ -25,6 +25,16 @@ $(function () {
   }).first().click();
 });
 
+$(function () {
+  $(".ESP32>button").click(function (e) {
+    $(".ESP32>button.ESP32selected").removeClass();
+    $(".ESP32>button").addClass('btn card-body btn-outline-dark');
+    $(".iotespsview").load($(this).addClass("ESP32selected").attr("href"));
+    e.preventDefault();
+  }).first().click();
+});
+
+
 $("#submail").click(function(){
   const name=$('#name').val();
   const call=$('#call').val();
