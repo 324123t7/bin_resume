@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -131,4 +132,139 @@
     }
   </script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/jquery-3.7.1.min.js"></script>
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
+  <title>董文賓個人履歷</title>
+
+</head>
+<body style="background-color: #353535">
+  
+  <div class="container">
+    <div class="row">
+      <!-- 輪播圖 -->
+        <div class="col-12">
+            <div id="ViewESP32" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/iotesp32dht.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="./img/iotesp32_1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/iotesp32_2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/iotesp32_3.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/iotesp32_4.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/iotesp32_5.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/dht11_led.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#ViewESP32" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#ViewESP32" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+        </div>
+      <!-- 作品概述 -->
+        <div class="col-12 mt-3">
+            <p class="text-warning fw-semibold fs-5 mt-3">
+            <i class="bi bi-file-earmark-text-fill"></i>
+            作品概述
+            </p>
+            <span class="text-white">
+            &emsp;&emsp;該作品是2024/12/31於"台灣創造活動發展協會"結訓所製作的專題，藉由Arduino ESP32結合DHT11、RGB LED、LCD1602做智慧溫溼度感測並實時更新再網頁供使用者參考。
+            </span>
+        </div>
+        <!-- 開發工具 -->
+        <div class="col-12 col-sm-6 mt-3">
+            <p class="text-warning fw-semibold fs-5 ">
+            <i class="bi bi-hammer"></i>          
+            開發工具
+            </p>
+            <ol class="text-white" style="list-style-type:none;">
+            <li class="indent-title-3">前端：HTML、CSS、Javascript、JQuery、Bootstrap、Echarts</li>
+            <li class="indent-title-3">後端：PHP、MySQL</li>
+            <li class="indent-title-3">伺服器：Google Cloud Platform VM個體 Ubuntu系統</li>
+            <li class="indent-title-3">物聯網通訊協定：MQTT</li>
+
+            </ol>
+        </div>
+      <!-- 負責項目及主要功能 -->
+        <div class="col-12 col-sm-6">
+            <p class="text-warning fw-semibold fs-5 mt-3">
+            <i class="bi bi-hammer"></i>          
+            負責項目
+            </p>
+            <span class="text-white">
+            &emsp;&emsp;網站架構規劃、網站頁面切版、Arduino ESP32與網頁介接
+            </span>
+            <p class="text-warning fw-semibold fs-5 mt-3">
+            <i class="bi bi-lightbulb-fill"></i>          
+            主要功能
+            </p>
+            <span class="text-white">
+            &emsp;&emsp;監控溫室度及震動數據、透過網站瀏覽數據折線圖等
+            </span>
+        </div>
+        <div class="col-12 mt-3">
+            <p class="text-warning fw-semibold fs-5 ">
+            <i class="bi bi-globe-americas"></i>
+            相關連結
+            </p>
+            <div class="row">
+                <div class="col">
+                    <button type="button" class="btn btn-outline-info mx-auto d-block" onclick="openData()">數據監測網站</button>
+                </div> 
+                <div class="col">
+                    <button type="button" class="btn btn-outline-info mx-auto d-block" onclick="openlive()">報告直播</button>
+                </div>  
+                <div class="col">
+                    <button type="button" class="btn btn-outline-info mx-auto d-block" onclick="openHackMd()">筆記連結</button>
+                </div>  
+                <div class="col">
+                    <button type="button" class="btn btn-outline-info mx-auto d-block" onclick="openGithub()">Github連結</button>
+                </div> 
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openData(){
+        window.open('http://iotsvm.shop/mqtt/iot.html','_blank');
+    }
+    function openlive(){
+       window.open('https://www.facebook.com/share/v/19T4Q9mt72/','_blank');
+    }
+    function openHackMd(){
+        window.open('https://hackmd.io/@0q3lEDkPQdaD6eZ8vpOC_A/H10M6LOr1g','_blank');
+    }
+    function openGithub(){
+        window.open('https://github.com/wenbin0427/AI_IOT_TempHumi','_blank');
+    }
+  </script>
+</body>
+>>>>>>> cef3bb08de8c9d446207ad4d0e1e8185fa4b160e
 </html>
