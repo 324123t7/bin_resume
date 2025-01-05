@@ -34,40 +34,39 @@
     </div>
 
     <script>
-    
-    fetch('./uplog.json')
-      .then(response => response.json()) 
-      .then(data => {
-        data.sort((a, b) => new Date(b.date) - new Date(a.date)); 
-        
-        const accordionContainer = document.getElementById('accordionExample');
-        
-        data.forEach(item => {
-          const contentList = item.content.split(" ").map(contentItem => {
-            return `<li>${contentItem.substring(2)}</li>`;
-          }).join('');
-          
-          const accordionItemHTML = `
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="heading${item.id}">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${item.id}" aria-expanded="true" aria-controls="collapse${item.id}">
-                  ${item.date}&emsp;&emsp;${item.title}
-                </button>
-              </h2>
-              <div id="collapse${item.id}" class="accordion-collapse collapse ${item.id === 1 ? 'show' : ''}" aria-labelledby="heading${item.id}" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <ul>
-                    ${contentList}  
-                  </ul>
+        fetch('./uplog.json')
+        .then(response => response.json()) 
+        .then(data => {
+            data.sort((a, b) => new Date(b.date) - new Date(a.date)); 
+            
+            const accordionContainer = document.getElementById('accordionExample');
+            
+            data.forEach((item) => {
+            const contentList = item.content.split(" ").map(contentItem => {
+                return `<li>${contentItem.substring(2)}</li>`;
+            }).join('');
+            
+            const accordionItemHTML = `
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="heading${item.id}">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${item.id}" aria-expanded="false" aria-controls="collapse${item.id}">
+                    ${item.date}&emsp;&emsp;${item.title}
+                    </button>
+                </h2>
+                <div id="collapse${item.id}" class="accordion-collapse collapse" aria-labelledby="heading${item.id}" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                    <ul>
+                        ${contentList}  
+                    </ul>
+                    </div>
                 </div>
-              </div>
-            </div>
-          `;
+                </div>
+            `;
 
-          accordionContainer.innerHTML += accordionItemHTML;
-        });
-      })
-      .catch(error => console.error('讀取 JSON 出錯:', error));
+            accordionContainer.innerHTML += accordionItemHTML;
+            });
+        })
+        .catch(error => console.error('讀取 JSON 出錯:', error));
     </script>
 </body>
 </html>
