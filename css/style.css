@@ -1,0 +1,87 @@
+.circle {
+    width: 14.5rem;
+    height: 14.5rem;
+    border-radius: 50%;
+    border: 1px solid #ffc107;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.section{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-color: #353535;
+}
+.worksection{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-color: #212121;
+}
+.aboutme{
+    height: 180vh;
+}
+.work{
+    height: 220vh;
+}
+@media (min-width: 576px) { 
+    .aboutme{
+        height: 130vh;
+    }
+ }
+
+ @media (min-width: 768px) { 
+    .aboutme{
+        height: 130vh;
+    }
+    .work{
+        height: 150vh;
+    }
+ }
+
+ @media (min-width: 992px) { 
+    .aboutme{
+        height: 160vh;
+    }
+    .work{
+        height: 140vh;
+    }
+ }
+
+ @media (min-width: 1200px) { 
+    .aboutme{
+        height: 140vh;
+    }
+    .work{
+        height: 130vh;
+    }
+ }
+
+
+.circle_hollow{
+    width: 100px; 
+    height: 100px;
+    border-radius: 50%;
+    background: none; 
+    border: 4px solid #ffc107;
+    padding-top: 15px;
+    padding-left: 25px;
+}
+.iconsz{
+    width: 40px;
+    height: 40px;
+}
+
+.indent-title-3{
+    text-indent: -3em;
+    margin-left: 3em;
+  }
+

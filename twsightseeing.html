@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/jquery-3.7.1.min.js"></script>
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
+  <title>董文賓個人履歷</title>
+
+</head>
+<body style="background-color: #353535">
+  
+  <div class="container">
+    <div class="row">
+      <!-- 輪播圖 -->
+      <div class="col-12">
+        <div id="ViewWeb" class="carousel slide" data-bs-ride="true">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/sightseeing-PC.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/sightseeing-PC2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/sightseeing-PC3.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/sightseeing-phone.png" class="d-block w-100" alt="...">
+            </div>
+
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#ViewWeb" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#ViewWeb" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <!-- 作品概述 -->
+      <div class="col-12 mt-3">
+        <p class="text-warning fw-semibold fs-5 mt-3">
+          <i class="bi bi-file-earmark-text-fill"></i>
+          作品概述
+        </p>
+        <span class="text-white">
+          &emsp;&emsp;此網站"台灣觀光工廠"僅用來練習串接政府資料開放平台的API串接及GoogleMap經緯度定位練習。
+        </span>
+      </div>
+      <!-- 開發工具 -->
+      <div class="col-12 col-sm-6 mt-3">
+        <p class="text-warning fw-semibold fs-5 ">
+          <i class="bi bi-hammer"></i>          
+          開發工具
+        </p>
+        <ol class="text-white" style="list-style-type:none;">
+          <li class="indent-title-3">前端：HTML、CSS、Javascript、JQuery、Bootstrap</li>
+          <li class="indent-title-3">作業系統：Windows</li>
+        </ol>
+      </div>
+      <!-- 負責項目及主要功能 -->
+      <div class="col-12 col-sm-6">
+        <p class="text-warning fw-semibold fs-5 mt-3">
+          <i class="bi bi-hammer"></i>          
+          負責項目
+        </p>
+        <span class="text-white">
+          &emsp;&emsp;網站架構規劃、網站頁面切版
+        </span>
+        <p class="text-warning fw-semibold fs-5 mt-3">
+          <i class="bi bi-lightbulb-fill"></i>          
+          主要功能
+        </p>
+        <span class="text-white">
+          &emsp;&emsp;台灣各縣市觀光工廠查詢、工廠介紹、工廠網站連結
+        </span>
+      </div>
+      <div class="col-12 mt-3">
+        <p class="text-warning fw-semibold fs-5 ">
+          <i class="bi bi-globe-americas"></i>
+          相關連結
+        </p>
+        <div class="row">
+          <div class="col">
+            <button type="button" class="btn btn-outline-info mx-auto d-block" onclick="opentwsig()">網站連結</button>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-outline-info mx-auto d-block" onclick="openGithub()">Github連結</button>
+          </div> 
+        </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function opentwsig(){
+       window.open('https://iotsvm.shop/sightseeing/index.html','_blank');
+    }
+    function openGithub(){
+        window.open('https://github.com/wenbin0427/sightseeing.github.io','_blank');
+    }
+  </script>
+</body>
+</html>
