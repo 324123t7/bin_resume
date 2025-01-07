@@ -42,7 +42,7 @@
             const accordionContainer = document.getElementById('accordionExample');
             
             data.forEach((item) => {
-            const contentList = item.content.split(" ").map(contentItem => {
+            const contentList = item.content.split(",").map(contentItem => {
                 return `<li>${contentItem.substring(2)}</li>`;
             }).join('');
             
