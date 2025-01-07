@@ -2,26 +2,26 @@
     {
       "id": 1,
       "title": "個人網站建置",
-      "content": "1.新增關於我 2.新增個人作品 3.新增與我聯絡",
+      "content": "1.新增關於我,2.新增個人作品,3.新增與我聯絡",
       "date": "2024-07-31"
     },
     {
       "id": 2,
       "title": "新增作品",
-      "content": "1.新增ArduinoESP32實作溫濕度智慧監測",
+      "content": "1.新增Arduino ESP32實作溫濕度智慧監測",
       "date": "2024-12-31"
     },
     {
       "id": 3,
       "title": "新增更新日誌功能",
-      "content": "1.新增更新日誌功能 2.提供查詢履歷建置時間",
+      "content": "1.新增更新日誌功能,2.提供查詢履歷建置時間",
       "date": "2025-01-06"
     },
     {
-        "id": 4,
-        "title": "新增ZeroSSL",
-        "content": "1.個人作品使用的Google GCP VM個體加上SSL",
-        "date": "2025-01-07"
-      }
+      "id": 4,
+      "title": "新增ZeroSSL",
+      "content": "1.個人作品使用的Google GCP VM個體加上SSL",
+      "date": "2025-01-07"
+    }
   ]
   
