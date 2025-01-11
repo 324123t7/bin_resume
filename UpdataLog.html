@@ -29,28 +29,12 @@
     </ul>
     <div class="container">
         <div class="row">
-            <div class="col-8 mx-auto">
+            <div class="col-12 col-sm-8 mx-auto">
                 <div class="accordion mt-5 card" id="accordionExample"></div>
             </div>
         </div>
     </div>
-    <!-- <div class="accordion-item">
-        <div class="row accordion-header accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapse${item.id}" aria-expanded="false" aria-controls="collapse${item.id}" id="heading${item.id}">
-            <div class="col-4 col-sm-2" >
-                ${item.date}
-            </div>
-            <div class="col-8 col-sm-10">
-                <div>${item.title}</button>
-            </div> 
-        </div>                          
-        <div id="collapse${item.id}" class="accordion-collapse collapse" aria-labelledby="heading${item.id}" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-                <ul>
-                    ${contentList}  
-                </ul>
-            </div>
-        </div>
-    </div> -->
+
     <script>
         fetch('./uplog.json')
         .then(response => response.json()) 
