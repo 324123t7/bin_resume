@@ -3,34 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="./js/jquery-3.7.1.min.js"></script>
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
     <title>董文賓個人履歷</title>
 
 </head>
 <body style="background-color: #212121">
     <ul class="nav sticky-top justify-content-center border-1 border-bottom border-warning mt-3 pb-3" style="z-index: 999;background-color: #212121;">
         <li class="nav-item">
-          <a class="nav-link active text-white" href="#aboutme">關於我</a>
+          <a class="nav-link active text-white" href="./index.html#aboutme">關於我</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="#work">個人作品</a>
+          <a class="nav-link text-white" href="./index.html#work">個人作品</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-white" href="./contact.html">與我聯絡</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link text-white" href="./UpdataLog.html">更新日誌</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-white" href="./NewResume.html">新版個人履歷</a>
+          <a class="nav-link text-white" href="./UpdataLog.html">更新日誌</a>
         </li>
     </ul>
-
     <div class="container header" >
         <div class="row ">
             <div class="col-12 text-center" >
@@ -38,7 +34,7 @@
                     <img class="img-fluid mt-4" src="./img/Head_sticker.png" data-aos="zoom-in" data-aos-duration="1000">
                 </div>
                 <div class="translate-middle" style="position: absolute; top: 60%; left: 50%; ">
-                    <p class="text-white fw-semibold fs-4">董文賓</p>
+                    <p class="text-white fw-semibold fs-4 mt-4">董文賓</p>
                     <a href="https://github.com/wenbin0427" target="_blank"><i class="bi bi-github" style="color:rgb(197, 196, 196);font-size: 50px;"></i></a>
                     <a href="https://hackmd.io/@0q3lEDkPQdaD6eZ8vpOC_A" target="_blank"><i class="bi bi-journal-bookmark-fill ms-3" style="color:rgb(197, 196, 196);font-size: 50px;"></i></a>
                 </div>
@@ -231,11 +227,17 @@
                 </div>
             </div>
         </div>
+        <div class="col-12 text-center mt-5">
+            <button class="btn btn-info" onclick="opennewresume()">新版個人履歷</button>
+        </div>
     </section>
 <script src="./js/ajax.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
+    function opennewresume(){
+        window.open('https://wenbin0427.github.io/bin_resume.github.io/NewResume.html','_blank');
+    }
 </script>
 </body>
 </html>

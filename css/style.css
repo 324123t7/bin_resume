@@ -30,11 +30,11 @@
     height: 180vh;
 }
 .work{
-    height: 220vh;
+    height: 230vh;
 }
 @media (min-width: 576px) { 
     .aboutme{
-        height: 130vh;
+        height: 140vh;
     }
  }
 
@@ -43,7 +43,7 @@
         height: 130vh;
     }
     .work{
-        height: 150vh;
+        height: 160vh;
     }
  }
 
@@ -52,7 +52,7 @@
         height: 160vh;
     }
     .work{
-        height: 140vh;
+        height: 150vh;
     }
  }
 
@@ -61,7 +61,7 @@
         height: 140vh;
     }
     .work{
-        height: 130vh;
+        height: 140vh;
     }
  }
 
@@ -84,4 +84,6 @@
     text-indent: -3em;
     margin-left: 3em;
   }
-
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23ffc107' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
