@@ -13,6 +13,24 @@
 
 </head>
 <body style="background-color: #212121">
+    <div class="modal z-9999 d-block" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <di class="modal-content">
+            <div class="modal-body">
+              <p class="text-center mt-5 text-danger">本網站為舊版網站於2025/01/22停止更新</p>
+              <div class="row grid gap-0 row-gap-2 mt-5">
+                <div class="col-12 col-sm-6">
+                  <button type="button" class="btn btn-outline-info mx-auto d-block w-100" onclick="opennewurl()">前往新網站</button>
+                </div>
+                <div class="col-12 col-sm-6">
+                  <button type="button" class="btn btn-outline-info mx-auto d-block w-100" onclick="opencontact()">與我聯絡</button>
+                </div> 
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="modal-backdrop fade show"></div>
     <ul class="nav sticky-top justify-content-center border-1 border-bottom border-warning mt-3 pb-3" style="z-index: 999;background-color: #212121;">
         <li class="nav-item">
           <a class="nav-link active text-white" href="./index.html#aboutme">關於我</a>
@@ -236,7 +254,14 @@
 <script>
     AOS.init();
     function opennewresume(){
-        window.open('https://wenbin0427.github.io/bin_resume.github.io/NewResume.html','_blank');
+        window.open('https://wenbin0427.github.io/new_bin_resume/#/','_blank');
+    }
+
+    function opennewurl(){
+        window.open('https://wenbin0427.github.io/new_bin_resume/#/','_blank');
+    }
+    function opencontact(){
+        window.open('https://wenbin0427.github.io/new_bin_resume/#/contact','_blank');
     }
 </script>
 </body>
